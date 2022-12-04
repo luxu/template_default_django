@@ -1,38 +1,46 @@
 # Project Template by Luxu
 
-## Este template foi feito com:
-
-* [Python 3.10.6](https://www.python.org/)
-* [Django 4.1.*](https://www.djangoproject.com/)
-
-
-Now we can pull Django Quickstart Structure to Project
-
-django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip
-
-And then, proceed with the installation of quickstart's requirements.
-
 ## Como rodar o template?
 * Crie um virtualenv com Python.
-* Ative o virtualenv.
-* rode ``django-admin startproject --template https://github.com/username/repo/archive/master.zip --name=Procfile new_django_project .``
-
-
-# Criar o *.env*
-* rode ``python contrib/env_gen.py``
-* Fazer as alterações necessárias
-
-## Como rodar o projeto?
-* Crie um virtualenv com Python.
-* Ative o virtualenv.
-* Instale as dependências.
-* Rode as migrações.
-
 ```
+- Windows
 python -m venv .venv
+--------------------
+- Linux
+python3 -m venv .venv
+```
+* Ative o virtualenv.
+```
+Windows
+.venv/Scripts/activate
+--------------------
+Linux
 source .venv/bin/activate
+```
+* Instale o django
+```
+pip install django
+
+django-admin startproject --template https://github.com/luxu/template_default_django/archive/master.zip my_site
+cd my_site
+```
+* Instale as dependências.
+``
 pip install -r requirements.txt
+``
+* Criar o *.env*
+``python contrib/env_gen.py``
+* Fazer as alterações necessárias
+* Rode as migrações.
+```
 python manage.py migrate
 python manage.py createsuperuser --username="admin" --email=""
 python manage.py runserver
 ```
+
+Para o test com Pytest
+* Instale as dependências.
+``
+pip install -r requirements-dev.txt
+``
+Na pasta **core** tem uma pasta **tests** onde devem ficar os tests
