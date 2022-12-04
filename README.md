@@ -12,14 +12,17 @@ django-admin startproject --template https://github.com/henriquebastos/django-qu
 
 And then, proceed with the installation of quickstart's requirements.
 
+## Como rodar o template?
+* Crie um virtualenv com Python.
+* Ative o virtualenv.
+* rode ``django-admin startproject --template https://github.com/username/repo/archive/master.zip --name=Procfile new_django_project .``
+
 
 # Criar o *.env*
 * rode ``python contrib/env_gen.py``
 * Fazer as alterações necessárias
 
 ## Como rodar o projeto?
-
-
 * Crie um virtualenv com Python.
 * Ative o virtualenv.
 * Instale as dependências.
