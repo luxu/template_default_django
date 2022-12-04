@@ -19,6 +19,7 @@ source .venv/bin/activate
 ```
 * Instale o django
 ```
+python.exe -m pip install --upgrade pip
 pip install django
 
 django-admin startproject --template https://github.com/luxu/template_default_django/archive/master.zip my_site
