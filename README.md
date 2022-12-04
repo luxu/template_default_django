@@ -8,7 +8,7 @@
 
 Now we can pull Django Quickstart Structure to Project
 
-django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip --name=Procfile,.env myproject .
+django-admin startproject --template https://github.com/henriquebastos/django-quickstart/archive/master.zip
 
 And then, proceed with the installation of quickstart's requirements.
 
@@ -26,8 +26,6 @@ And then, proceed with the installation of quickstart's requirements.
 * Rode as migrações.
 
 ```
-git clone https://github.com/rg3915/django-htmx-tutorial.git
-cd django-htmx-tutorial
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
